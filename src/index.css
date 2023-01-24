@@ -1,0 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.inputField {
+  @apply bg-[#272522] font-semibold text-lg px-4 py-2 rounded-lg text-[#f2f2f2] border-b-4 border-[#1F1E1B] focus:outline-none focus:border-[rgb(127,166,80)] hover:border-[#7FA650];
+}
