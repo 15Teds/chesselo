@@ -3,9 +3,12 @@ import { execute } from "./utils/elo";
 import { EloResult } from "./types";
 import { toast } from "react-hot-toast";
 import Navbar from "./components/Navbar";
+import ComOutage from "./components/modal/ComOutage";
 
 function App() {
   const [result, setResult] = useState<EloResult | null>(null);
+
+  const [modalShown, setModalShown] = useState<string | null>("comOutage");
 
   const calc = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -37,6 +40,10 @@ function App() {
 
   return (
     <>
+      {modalShown === "comOutage" && (
+        <ComOutage setModalShown={setModalShown} />
+      )}
+
       {/* form that has player 1 username, player 2 username, and then the type of game as a dropdown */}
       <div className="flex min-h-screen w-screen justify-center items-center text-white flex-col bg-[#312E2B] py-5">
         <Navbar />
