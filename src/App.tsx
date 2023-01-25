@@ -152,14 +152,13 @@ function App() {
             </div>
           </div>
         )}
-
-        <footer className="flex md:fixed bottom-0 justify-center items-center w-full h-20 bg-darkprimary text-white">
-          <p className="text-lg">
-            Made by Ted - Not affiliated with{" "}
-            <span className="text-greenprimary">chess.com</span>
-          </p>
-        </footer>
       </div>
+      <footer className="absolute flex bottom-0 justify-center items-center w-full h-20 bg-darkprimary text-white">
+        <p className="text-lg">
+          Made by Ted - Not affiliated with{" "}
+          <span className="text-greenprimary">chess.com</span>
+        </p>
+      </footer>
     </>
   );
 }
