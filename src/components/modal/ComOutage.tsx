@@ -6,7 +6,7 @@ export default function ComOutage({
   setModalShown: React.Dispatch<React.SetStateAction<string | null>>;
 }) {
   return (
-    <div className="z-10 fixed h-screen w-screen bg-black/75 flex items-center justify-center">
+    <div className="z-10 fixed h-screen w-screen bg-black/75 flex items-center justify-center overflow-hidden">
       <div className="flex flex-col rounded-lg border-b-8 shadow-xl border-darksecondary items-center justify-between p-10 w-full h-1/2 md:w-1/2 bg-darkprimary text-white">
         <div>
           <img

@@ -153,7 +153,7 @@ function App() {
           </div>
         )}
       </div>
-      <footer className="flex justify-center items-center w-screen h-20 bg-darkprimary text-white">
+      <footer className="flex justify-center items-center w-full h-20 bg-darkprimary text-white">
         <p className="text-lg">
           Made by Ted - Not affiliated with{" "}
           <span className="text-greenprimary">chess.com</span>
