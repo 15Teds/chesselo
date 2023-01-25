@@ -45,13 +45,13 @@ function App() {
       )}
 
       {/* form that has player 1 username, player 2 username, and then the type of game as a dropdown */}
-      <div className="flex min-h-screen w-screen justify-center items-center text-white flex-col bg-[#312E2B] py-5">
+      <div className="flex min-h-screen justify-center items-center text-white flex-col bg-[#312E2B]">
         <Navbar />
         {/* style form with tailwind */}
         {!result ? (
           <form
             onSubmit={calc}
-            className="flex flex-col w-full px-4 md:w-1/3 space-y-5 group"
+            className="flex flex-col px-4 md:w-1/3 space-y-5 group"
           >
             <div className="flex flex-col items-center justify-center space-y-5">
               <h1 className="text-4xl font-bold">Elo Calculator</h1>
@@ -153,7 +153,7 @@ function App() {
           </div>
         )}
       </div>
-      <footer className="absolute flex bottom-0 justify-center items-center w-full h-20 bg-darkprimary text-white">
+      <footer className="flex justify-center items-center w-screen h-20 bg-darkprimary text-white">
         <p className="text-lg">
           Made by Ted - Not affiliated with{" "}
           <span className="text-greenprimary">chess.com</span>
