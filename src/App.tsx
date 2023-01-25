@@ -106,6 +106,15 @@ function App() {
         ) : (
           <div className="">
             <div>
+              <h1 className="text-4xl font-bold text-center mb-5">
+                Result -{" "}
+                {
+                  ((result.general?.gameType
+                    .charAt(0)
+                    .toUpperCase() as string) +
+                    result.general?.gameType.slice(1)) as string
+                }
+              </h1>
               <div className="flex flex-col md:flex-row">
                 <PlayerCard
                   player={result.general?.player1.name as string}

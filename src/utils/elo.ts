@@ -81,6 +81,7 @@ async function predictOutcome(player1Arg: any, player2Arg: any, gameType: any) {
         rd: player2Stats.rd,
         name: player2Arg,
       },
+      gameType: gameType,
     },
   };
 

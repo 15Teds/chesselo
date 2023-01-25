@@ -10,6 +10,7 @@ export interface EloResult {
             rd: number;
             name: string;
         },
+        gameType: string;
     }
     player1?: {
         win: number;
